@@ -39,7 +39,7 @@ def userDetail(request, pk):
 	serializer = UsersSerializer(tasks, many=False)
 	return Response(serializer.data)
 
-@api_view(['POST','PUT'])
+@api_view(['PUT'])
 def userUpdate(request, pk):
 	task = Users.objects.get(id=pk)
 	serializer = UsersSerializer(instance=task, data=request.data)
