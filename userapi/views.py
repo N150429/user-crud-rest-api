@@ -16,7 +16,7 @@ def apiOverview(request):
 		'Detail View':'/user/<str:pk>/',
 		'Create':'/user-create/',
 		'Update':'/user-update/<str:pk>/',
-		'patch':'/user-patch/<str:pk>',
+		'Patch':'/user-patch/<str:pk>',
 		'Delete':'/user-delete/<str:pk>/',
 	}
 	return Response(api_urls)
