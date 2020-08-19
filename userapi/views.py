@@ -8,7 +8,7 @@ from .serializers import UsersSerializer
 from rest_framework.response import Response
 from .models import Users
 
-# Creatte views here.
+# Create views here.
 @api_view(['GET'])
 def userapiOverview(request):
 	api_urls = {
