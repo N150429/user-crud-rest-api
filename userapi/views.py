@@ -8,9 +8,9 @@ from .serializers import UsersSerializer
 from rest_framework.response import Response
 from .models import Users
 
-# Create your views here.
+# create your views here.
 @api_view(['GET'])
-def apiOverview(request):
+def userapiOverview(request):
 	api_urls = {
 		'users':'/users/',
 		'Detail View':'/user/<str:pk>/',
