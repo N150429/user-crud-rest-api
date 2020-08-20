@@ -12,7 +12,7 @@ from .models import Users
 @api_view(['GET'])
 def userapiOverview(request):
 	api_urls = {
-		'users':'/users/',
+		'Users':'/users/',
 		'Detail View':'/user/<str:pk>/',
 		'Create':'/user-create/',
 		'Update':'/user-update/<str:pk>/',
