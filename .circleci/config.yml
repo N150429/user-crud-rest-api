@@ -12,7 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: chmod +x ./manage.py test
+          command: |
+           python3 -m venv env
+           . env/bin/activate
+           ./manage.py test
           name: Test
 
 workflows:
